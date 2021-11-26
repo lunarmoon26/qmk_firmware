@@ -36,7 +36,6 @@
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-#define LED_CAPS_LOCK_PIN B2
 #define LED_NUM_LOCK_PIN E2
 #define LED_SCROLL_LOCK_PIN F7
 #define LED_PIN_ON_STATE 0
@@ -45,6 +44,14 @@
 #define BACKLIGHT_PIN B6
 #ifdef BACKLIGHT_PIN
 #define BACKLIGHT_LEVELS 5
+#endif
+
+/* RGB Underglow */
+#define RGB_DI_PIN B2
+#ifdef RGB_DI_PIN
+#define RGBLED_NUM 16
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_LAYERS
 #endif
 
 /* Set 0 if debouncing isn't needed */
